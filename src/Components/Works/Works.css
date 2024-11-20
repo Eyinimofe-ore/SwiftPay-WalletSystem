@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.works{
+    width: 90%;
+    margin-inline: auto;
+    text-align: center;
+    margin-top: 25px;
+    height: 90vh;
+  
+    
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px,1fr));
+    gap: 1rem;
+    margin-top: 3rem;
+    margin-bottom: 50px;
+}
+.box{
+    border: 1px solid #ccc;
+    border-radius: 19px;
+    padding: 1rem;
+    text-align: center;
+    display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 3;
+    transition: tranform 0.3s;
+    box-shadow: 1px 1px 1px rgba(18, 18, 18, 0.678);
+}
+.box h2{
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+   
+    font-size: 20px;
+}
+.box p{
+    font-size: 15px;
+}
+.box:hover{
+    transform: translateY(-15px);
+  
+}
+.left{
+    width: 100px;
+    height: 320px;
+    background: #BCE4FE;
+    top: 50px;
+    position: sticky;
+    border-radius: 1rem;
+    margin-left: 60px;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+.right{
+    width: 750px;
+}
+
+.features{
+    display: flex;
+    padding: 50px;
+    gap :3rem;
+    align-items: center;
+    width: 1200px;
+    border-radius: 50px;
+  
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+   
+}
+
+.grid-feature{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+    gap: 25px;
+    
+    
+    
+}
+.feature-box{
+    display: flex;
+   height: 135px;
+   border: transparent 2px solid;
+   border-radius: 20px;
+   padding: 20px;
+   margin-bottom: 10px;
+   align-items: center;
+   background-color: #F6EBAE;
+   
+  
+}
+.feature-box span{
+    font-size: 100px;
+    position: absolute;
+    color: #BCE4FE;
+    margin-right: 20px;
+
+    z-index: 1;
+}
+.feature-box p{
+    margin-top: 30px;
+    margin-left: 50px;
+}
+.box img{
+    width: 70px;
+    height: 70px;
+    margin-left: 90px;
+    margin-bottom: 15px;
+}
+.works h1{
+   
+        color: #444444;
+        font-size: 40px;
+        margin-top: 20px;
+        margin-left: 60px;
+        margin-bottom: 15px;
+}

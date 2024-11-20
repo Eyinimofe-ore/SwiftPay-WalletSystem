@@ -1,0 +1,30 @@
+.inputcontent{
+    width: 400px;
+    height: 50px;
+    outline: none;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    gap: 10px;
+    border-bottom: 5px solid #487bd2 ;
+
+  }
+ 
+  .inputtext{
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 1.2rem;
+  }
+  .iconcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  
+  }
+  .inputcontent .icon{
+    font-size: 25px;
+   
+  }

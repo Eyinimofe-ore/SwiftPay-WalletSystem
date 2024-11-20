@@ -1,0 +1,238 @@
+
+/* Global reset and font settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .wallet-container {
+    width: 980px;
+    height: 570px;
+    margin-top: 20px;
+    gap: 1em;
+    display: flex;
+    margin-left: 250px;
+  }
+  
+  .column-left, .column-right {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .column-left {
+    flex: 2;
+    border: 1px solid #487bd2 ;
+  }
+  
+  .column-right {
+    flex: 1;
+    border: 1px solid #487bd2;
+  }
+  
+  .roww1 {
+    
+    border-bottom: 2px solid #487bd2;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    margin-top: 10px;
+  }
+  
+  .roww1 h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+
+  }
+  
+  .roww1 span {
+    color: #487bd2;
+  }
+  
+  .roww2 {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #487bd2;
+    color: #fff;
+    border-radius: 20px;
+    padding: 20px;
+    height: 250px;
+    width: 500px;
+   
+
+  }
+
+  .roww2 h2 {
+    font-size: 24px;
+    
+  }
+  
+  .roww2 h1 {
+    font-size: 40px;
+  }
+  
+  .roww2 button{
+ 
+    align-self: flex-end;
+  }
+  
+  .roww3 {
+    display: flex;
+    gap: 5em;
+  margin-top: 30px;
+    
+  }
+  
+  .roww3 h2 {
+    padding: 10px;
+    font-size: 20px;
+  }
+  
+  .roww3 img {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    transition: transform 0.3s;
+  }
+  
+  .roww3 img:hover {
+    transform: scale(1.1);
+  }
+  
+  .mleft {
+    background: #fff;
+    box-shadow: 2px 2px 2px rgba(18, 18, 18, 0.1);
+    margin-left: -20px;
+    width: 100px;
+   
+  }
+
+  
+  .mright {
+    background: #fff;
+    box-shadow: 5px 5px 5px rgba(18, 18, 18, 0.1);
+    margin-right: 30px;
+  }
+  
+
+  
+  .t-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 2px solid #487bd2;
+  }
+  
+  .t-header h1 {
+    font-size: 28px;
+  }
+  
+  .t-header a {
+    color: #487bd2;
+    font-size: 14px;
+    text-decoration: none;
+    border-radius: 20px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .t-header a:hover {
+    background-color: #487bd2;
+    color: #fff;
+  }
+  
+  .tran1 {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .tran1:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tran1 h3 {
+    font-size: 18px;
+  }
+  
+  .tran1 span {
+    color: #4caf50;
+    font-weight: bold;
+  }
+  
+  .tran1 p {
+    color: #666;
+  }
+  .action-item{
+    font-size: 60px;
+    display: flex;
+    color: #333;
+    margin-top: 30px;
+
+  }
+  .toggle-visibility-btn{
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    margin-left: 250px;
+    color: #f4f4f4;
+  }
+  /* Recent Transactions */
+.recent-transactions {
+  margin-top: 2px;
+  border-top: 1px solid #ddd;
+  padding-top: 15px;
+}
+
+.recent-transactions .recent-transaction-item {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 7px 0;
+  border-bottom: 1px solid #eee;
+  border: 1px solid #487bd2;
+  border-radius: 20px;
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.recent-transaction-item p {
+  margin-bottom: 5px;
+  padding-left: 10px;
+}
+
+.recent-transaction-item .wallet-icon{
+  padding-left: 10px;
+  font-size: 30px;
+}
+
+.recent-transaction-item:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+
+.recent-transaction-item p:first-child {
+  font-weight: bold;
+}
+
+.recent-transaction-item p:last-child {
+  color: #888;
+}

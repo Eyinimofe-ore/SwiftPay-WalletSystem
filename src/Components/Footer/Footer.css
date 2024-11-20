@@ -1,0 +1,171 @@
+footer{
+    width: 100vw;
+    
+    position: absolute;
+    
+    background-color: #000;
+    color: #ccc;
+    padding: 100px 0 30px ;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    
+}
+.col{
+    flex-basis: 80px;
+    margin-bottom: 30px;
+    
+}
+
+
+#col2 li{
+    margin-right: 50px;
+}
+.col :nth-child(2),.col :nth-child(3){
+    flex-basis: 15%;
+}
+.col h1{
+   
+    width: fit-content;
+    margin-bottom: 20px;
+}
+.col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+}
+.email-id{
+    width: fit-content;
+   border-bottom: 1px solid #ccc;
+   margin: 20px 0;
+}
+ul li{
+    list-style: none;
+    margin-bottom: 12px;
+}
+ul li a {
+    text-decoration: none;
+    color: #ccc;
+}
+.col form{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px;
+    align-items: center ;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+
+.far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+footer input{
+    
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+footer button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+footer button .arrow{
+    font: 16px;
+    color: #ccc;
+}
+footer ::placeholder{
+    color: #cccccc70;
+}
+.social-icons .icon{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+
+}
+hr{
+    width: 90%;
+    border: 0;
+    border-bottom:  1px solid #ccc;
+    margin: 20px auto;
+}
+.copyright{
+    text-align: center;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: absolute;
+    top: 25px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    position: absolute;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+}
+@keyframes moving {
+    0%{
+         left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+@media (max-width:700px){
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+        
+        
+    }
+    .col :nth-child(2),.col :nth-child(3){
+        flex-basis: 100%;
+        
+    }
+    .cars,.car_options{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .car{
+        margin: auto;
+    }
+    .car_info{
+        margin-bottom: 30px;
+    }
+}
+span{
+    font-style: italic;
+}
+.iconic2{
+    font-size: 23px;
+    color: #fff;
+}

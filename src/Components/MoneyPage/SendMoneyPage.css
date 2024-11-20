@@ -1,0 +1,109 @@
+/* SendMoneyPage.css */
+
+.send-money-page {
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    margin: 50px auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    
+  }
+  
+  .send-money-page h2 {
+    color: #487bd2;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+  
+  .send-money-page input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.3s;
+  }
+  
+  .send-money-page input:focus {
+    border: 1px solid #487bd2;
+  }
+  
+  .send-money-page button {
+    width: 100%;
+    padding: 12px;
+    margin: 20px 0;
+    background-color: #487bd2;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .send-money-page button:hover {
+    background-color: #365c9b;
+  }
+  
+  .message {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #d9534f; /* Red for error messages */
+    text-align: center;
+  }
+  
+  /* Success message styling */
+  .message.success {
+    color: #5cb85c;
+  }
+  .send-money-page {
+    padding: 20px;
+  }
+  
+  .back-button {
+    margin-bottom: 20px;
+    background: none;
+    border: none;
+    color: #487bd2;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .receipt {
+    text-align: left;
+  }
+  
+  .receipt h2 {
+    margin-bottom: 20px;
+    color: #487bd2;
+  }
+  
+  .receipt p {
+    margin: 10px 0;
+  }
+  
+  .receipt button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #487bd2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .receipt button:hover {
+    background-color: #365a9c;
+  }
+  
+  

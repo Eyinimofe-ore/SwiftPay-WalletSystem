@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #f4f4f4;
+  }
+  
+  .account h4 {
+    font-size: 24px;
+    margin: 0;
+    color: #293847;
+  }
+  
+  .account h5 {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    color: #487bd2;
+    margin: 0;
+  }
+  
+  /* Account Container */
+  .account {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+    background-color: #f4f4f4;
+    margin-left: 100px;
+  }
+  
+  .acct {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+  }
+  
+  .account-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Profile Header */
+  .profile-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  
+  .profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #487bd2;
+    margin-bottom: 30px;
+  }
+  
+  /* Edit Profile and Password Sections */
+  .edit-profile-box,
+  .update-password-box {
+    margin-bottom: 20px;
+  }
+  
+  .edit-profile-form .form-group,
+  form .password-field {
+    margin-bottom: 15px;
+  }
+  
+  .edit-profile-form .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #293847;
+  }
+  
+  .edit-profile-form .form-group input,
+  .password-field input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .edit-profile-form form button {
+    padding: 12px;
+    background-color: #487bd2;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    transition: background-color 0.3s;
+  }
+  
+  .edit-profile-form form button:hover {
+    background-color: #356bb5;
+  }
+  
+  /* Password Toggle Icon */
+  .password-field {
+    position: relative;
+  }
+  
+  .password-field input {
+    padding-right: 40px;
+  }
+  
+  .toggle-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: #487bd2;
+  }
+  
+  /* General Settings */
+  .general-settings ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+  
+  .general-settings li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #293847;
+  }
+  .general-settings li span{
+    border: none;
+  }
+  
+  .general-settings li .icon-text {
+    margin-left: 10px;
+    margin-bottom: 10px;
+  }
+  .general-settings li .acc-icon{
+    height: 25px;
+    width: 25px;
+    margin-top: 20px;
+  }
+  
+  .logout-button {
+    display: block;
+    margin-top: 35px;
+    text-align: center;
+    background: transparent;
+    color: #487bd2;
+    border: 1px solid #487bd2;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #487bd2;
+    color: #fff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .account {
+      margin-left: 0;
+    }
+  
+    .account-container {
+      padding: 20px;
+      max-width: 100%;
+    }
+  
+    .account h4 {
+      font-size: 20px;
+    }
+  
+    .profile-header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  
+    .profile-image {
+      margin-bottom: 10px;
+    }
+  
+    .edit-profile-form .form-group input,
+    .password-field input {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .edit-profile-form form button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .account-container {
+      padding: 15px;
+    }
+  
+    h4 {
+      font-size: 18px;
+    }
+  
+    .profile-image {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .toggle-icon {
+      right: 5px;
+    }
+  
+    form button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .logout-button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  

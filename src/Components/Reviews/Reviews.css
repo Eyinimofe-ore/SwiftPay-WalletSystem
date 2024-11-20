@@ -1,0 +1,150 @@
+.section__container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: -100px;
+    height: 100vh;
+    
+  }
+
+  
+  .section__container h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #487bd2;
+  }
+  
+  .section__container h1 {
+    position: relative;
+    margin-bottom: 2rem;
+    font-weight: 600;
+    color: black;
+  }
+  
+  .section__container h1::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+    width: 5rem;
+    background-color: #487bd2;
+  }
+  
+
+  
+  .section__card {
+    
+    margin-top: 10px;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+
+    padding: 5rem 2rem 2rem;
+    background-color: var(--white);
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.728);
+    transition: 0.3s;
+  }
+  
+  .section__card::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 55%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: #487bd2;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  
+  .section__card span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    color: var(--white);
+  }
+  
+  .section__card h4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #487bd2;
+    transition: 0.3s;
+  }
+  
+  .section__card p {
+    margin-bottom: 1rem;
+    color: black;
+    transition: 0.3s;
+    font-size: 1rem;
+  }
+  
+  .section__card img {
+    margin-bottom: 0.5rem;
+    max-width: 70px;
+    border-radius: 100%;
+    border: 2px solid #487bd2;
+    transition: 0.3s;
+    margin-left: 140px;
+  }
+  
+  .section__card h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color:#487bd2 ;
+    transition: 0.3s;
+  }
+  
+  .section__card h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+    transition: 0.3s;
+  }
+  
+  .section__card:hover::before {
+    width: 400%;
+  }
+  
+  .section__card:hover :is(h4, h5) {
+    color: #fff;
+  }
+  
+  .section__card:hover :is(p, h6) {
+    color: #fff;
+  }
+  
+  .section__card:hover img {
+    border-color: #fff;
+    
+  }
+  .swiper {
+    width: 400px;
+    padding-top: 10px;
+    padding-bottom: 30px;
+    height: 500px;
+  }
+  
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 500px;
+    height: 300px;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .swiper-wrapper{
+    width: 100vw;
+  }

@@ -1,0 +1,158 @@
+/* Styles for the main login/signup container */
+.logincontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #487bd2, #6aa5ff);
+  }
+  
+  /* Styles for the overlay */
+  .overlay {
+    position: relative;
+    width: 90%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  /* Styles for the body of the container */
+  .body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    
+    
+  }
+  
+  /* Styles for the image container */
+  .img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .img img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* Styles for the login/signup input container */
+  .logininputcontainer {
+    width: 100%;
+  }
+  
+  .signup h1 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styles for the buttons */
+  .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .buttoncontainer button {
+    width: 48%;
+  }
+  
+  /* Styles for error messages */
+  .error {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #ff4d4f;
+  }
+  
+  /* Modal custom styles */
+  .ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 200ms ease-in-out;
+  }
+  
+  .ReactModal__Overlay--after-open {
+    opacity: 1;
+  }
+  
+  .ReactModal__Overlay--before-close {
+    opacity: 0;
+  }
+  
+  .ReactModal__Content {
+    padding: 40px 20px;
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+    transition: transform 200ms ease-in-out, opacity 200ms ease-in-out;
+    transform: translateY(-20px);
+    opacity: 0;
+    z-index: -1;
+  }
+  
+  .ReactModal__Content--after-open {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .ReactModal__Content--before-close {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  
+  /* Modal header */
+  .ReactModal__Content h1 {
+    font-size: 24px;
+    color: #487bd2;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Modal input styling */
+  .ReactModal__Content .inputcontent {
+    margin-bottom: 15px;
+  }
+  
+  .ReactModal__Content .inputcontent input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #000;
+  }
+  
+  /* Modal button container */
+  .ReactModal__Content .buttoncontainer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .ReactModal__Content .buttoncontainer button {
+    width: 48%;
+    background-color: #487bd2;
+    color: #000;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .ReactModal__Content .buttoncontainer button:hover {
+    background-color: #3a68b7;
+  }
