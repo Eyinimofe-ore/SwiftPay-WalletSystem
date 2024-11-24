@@ -9,7 +9,7 @@ function About() {
         <div className='about-container'>
             <div className='heading'>
                 <h1>About Us</h1>
-                <div className='dash'></div>
+                
 
 
             </div>

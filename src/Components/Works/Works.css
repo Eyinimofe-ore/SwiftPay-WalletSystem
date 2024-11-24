@@ -117,3 +117,296 @@
         margin-left: 60px;
         margin-bottom: 15px;
 }
+@media (max-width: 1024px) {
+    .works {
+        width: 95%; /* Slightly increase width to fit screen */
+        height: auto; /* Allow height to adapt to content */
+        margin-top: 20px;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column size */
+        gap: 1.5rem; /* Increase spacing */
+        margin-top: 2rem;
+        margin-bottom: 40px;
+    }
+
+    .box {
+        padding: 1.5rem; /* Adjust padding */
+        border-radius: 15px; /* Slightly smaller corners */
+    }
+
+    .box h2 {
+        font-size: 18px; /* Slightly reduce font size */
+    }
+
+    .box p {
+        font-size: 14px; /* Reduce paragraph size */
+    }
+
+    .box:hover {
+        transform: translateY(-10px); /* Subtle hover effect */
+    }
+
+    .left {
+        width: 80px; /* Reduce width */
+        height: 280px; /* Adjust height */
+        padding: 15px; /* Adjust padding */
+        margin-left: 40px;
+    }
+
+    .right {
+        width: 650px; /* Reduce width */
+    }
+
+    .features {
+        width: 95%; /* Fit content within screen */
+        padding: 40px; /* Reduce padding */
+        gap: 2rem; /* Adjust gap */
+        border-radius: 30px; /* Slightly smaller corners */
+    }
+
+    .grid-feature {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* Adjust column size */
+        gap: 20px; /* Adjust spacing between feature boxes */
+    }
+
+    .feature-box {
+        height: 120px; /* Adjust height */
+        padding: 15px; /* Adjust padding */
+        border-radius: 15px; /* Reduce corner size */
+    }
+
+    .feature-box span {
+        font-size: 80px; /* Reduce icon size */
+        margin-right: 15px; /* Adjust spacing */
+    }
+
+    .feature-box p {
+        font-size: 14px; /* Reduce text size */
+        margin-top: 25px; /* Adjust spacing */
+        margin-left: 40px;
+    }
+
+    .box img {
+        width: 60px; /* Reduce image size */
+        height: 60px;
+        margin-left: 70px; /* Adjust positioning */
+        margin-bottom: 10px;
+    }
+
+    .works h1 {
+        font-size: 35px; /* Adjust font size */
+        margin-left: 50px; /* Adjust alignment */
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .works {
+        width: 100%; /* Full width for smaller screens */
+        margin-top: 15px;
+        height: auto; /* Allow content to dictate height */
+        text-align: center; /* Center-align content */
+       
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Adjust column size */
+        gap: 1rem; /* Reduce gap */
+        margin-top: 1.5rem;
+        margin-bottom: 30px;
+        padding: 20px;
+        margin-left: 25px;
+        margin-right: 10px;
+    }
+
+    .box {
+        padding: 1rem; /* Adjust padding */
+        border-radius: 10px; /* Smaller corners */
+    }
+
+    .box h2 {
+        font-size: 16px; /* Smaller font size */
+    }
+
+    .box p {
+        font-size: 13px; /* Adjust paragraph size */
+    }
+
+    .box:hover {
+        transform: translateY(-5px); /* Subtle hover effect */
+    }
+
+    .left {
+        width: 70px; /* Narrower sidebar */
+        height: 220px; /* Reduce height */
+        padding: 10px; /* Smaller padding */
+        margin-left: 20px;
+    }
+
+    .right {
+        width: 100%; /* Full width content */
+    }
+
+    .features {
+        width: 90%; /* Fit features within screen */
+        padding: 30px; /* Smaller padding */
+        gap: 1.5rem; /* Adjust gap */
+        border-radius: 20px; /* Smaller corners */
+    }
+
+    .grid-feature {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Adjust column size */
+        gap: 15px; /* Reduce gap */
+    }
+
+    .feature-box {
+        height: 100px; /* Adjust height */
+        padding: 10px; /* Reduce padding */
+        border-radius: 10px; /* Smaller corners */
+    }
+
+    .feature-box span {
+        font-size: 70px; /* Smaller icon size */
+        margin-right: 10px; /* Adjust spacing */
+    }
+
+    .feature-box p {
+        font-size: 12px; /* Smaller text size */
+        margin-top: 20px; /* Adjust margin */
+        margin-left: 30px;
+    }
+
+    .box img {
+        width: 50px; /* Smaller image */
+        height: 50px;
+        margin-left: 50px; /* Adjust positioning */
+        margin-bottom: 8px;
+    }
+
+    .works h1 {
+        font-size: 30px; /* Reduce font size */
+        margin-left: 20px; /* Adjust margin */
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 430px) {
+    .works {
+        width: 95%; /* Slight padding on the sides */
+        margin-left: 25px;
+        margin-top: 15px;
+        height: auto; /* Let content define height */
+        text-align: center;
+        display: flex;
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+    }
+    .works h1{
+        margin-left: 120px;
+    }
+
+    .wrapper {
+        display: flex; /* Flexbox for stacking */
+        flex-direction: column;
+        gap: 1rem; /* Maintain spacing between items */
+        margin-top: 1rem;
+        margin-bottom: 20px;
+        padding: 0 10px; /* Add padding for spacing */
+    }
+
+    .box {
+        width: 100%; /* Full width of parent */
+        padding: 1rem; /* Proper padding */
+        border-radius: 12px; /* Smooth corners */
+        margin: 0 auto; /* Center align */
+        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+        background-color: #fff; /* Make it stand out */
+        text-align: center;
+        margin-left: 60px;
+    }
+
+    .box h2 {
+        font-size: 16px; /* Slightly smaller font */
+        margin-bottom: 8px; /* Add space below heading */
+    }
+
+    .box p {
+        font-size: 14px; /* Smaller text */
+        color: #555; /* Subtle text color */
+    }
+
+    .box img {
+        width: 50px; /* Smaller size for images */
+        height: 50px;
+        margin: 0 auto 10px; /* Center and space below */
+    }
+
+    .box:hover {
+        transform: translateY(-5px); /* Subtle hover effect */
+    }
+
+    .left {
+        width: 90%; /* Full width sidebar */
+        height: auto; /* Allow flexible height */
+        padding: 15px; /* Add padding */
+        margin: 10px auto; /* Center it */
+        border-radius: 12px; /* Smooth corners */
+        background-color: #BCE4FE; /* Retain styling */
+        text-align: center; /* Align text center */
+    }
+
+    .right {
+        width: 100%; /* Adjust for mobile view */
+        margin-left: 0; /* Align properly */
+    }
+
+    .features {
+        display: flex;
+        flex-direction: column; /* Stack features */
+        gap: 1.5rem; /* Maintain spacing between features */
+        width: 100%; /* Full width */
+        padding: 20px; /* Add padding for spacing */
+        background-color: #f9f9f9; /* Light background for contrast */
+        border-radius: 20px; /* Smooth corners */
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        margin: 15px auto; /* Center it */
+    }
+
+    .grid-feature {
+        display: flex; /* Change to flex layout */
+        flex-direction: column; /* Stack items */
+        gap: 1rem; /* Add spacing */
+        padding: 0 15px; /* Padding for content */
+        align-items: center; /* Center-align items */
+    }
+
+    .feature-box {
+        display: flex;
+        flex-direction: row; /* Keep text and icon side-by-side */
+        align-items: center;
+        justify-content: flex-start;
+        width: 90%; /* Adjust to fit content */
+        padding: 10px 15px; /* Add space around */
+        border-radius: 12px; /* Smooth corners */
+        background-color: #F6EBAE; /* Maintain theme */
+        margin: 0 auto; /* Center align */
+        gap: 10px; /* Space between icon and text */
+    }
+
+    .feature-box span {
+        font-size: 40px; /* Smaller icon size */
+        color: #BCE4FE; /* Retain theme */
+    }
+
+    .feature-box p {
+        font-size: 14px; /* Adjust text size */
+        color: #333; /* Darker text for readability */
+    }
+
+    .works h1 {
+        font-size: 20px; /* Adjust heading size */
+        color: #444; /* Consistent heading color */
+        margin-bottom: 10px; /* Add spacing below */
+    }
+}
+

@@ -18,17 +18,7 @@
     margin-top: 40px;
    
 }
-.dash {
-    width: 100px;
-    height: 5px;
-    background:  #487bd2;
-    border-radius: 3px;
-    position: absolute;
-    top: 160px;
-    left: 650px;
-    overflow: hidden;
-    margin-bottom: 30px;
-}
+
 .about-wrapper{
     width: 85%;
     margin: 10px auto;
@@ -104,30 +94,143 @@
     width: 100%;
     height: auto;
 }
-@media screen  and (max-width:768){
-    .about-wrapper{
-        flex-direction: column;
-        margin-top: 0px;
-
+@media (max-width: 768px) and (min-width:430px) {
+    .about-container .heading{
+        width: 70%;
+        margin: auto;
+        text-align: center;
+    
     }
     .about-container .heading h1{
         color: #444444;
-        font-size: 40px;
-        
+        font-size: 35px;
+        margin-top: 40px;
+        margin-bottom: 20px;
        
     }
-    .about-content,.image{
+    .about-content h2{
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        font-size: 25px;
+        color: #487bd2;
+    }
+    .about-content p{
+        color: #666;
+        font-size: 18px;
+        line-height: 1.5;
+        margin-top: 10px;
+        
+    }
+    .about-wrapper{
+        width: 85%;
+        margin: 8px auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+    }
+    .image img{
         width: 100%;
-        margin-top: 30px;
-    }
-    .about-content h1{
-        font-size: 25px
-    }
-    .about-content .Abtn{
-        font-size: 16px;
-        padding: 12px 14px;
+        height: 300px;
+        padding: 20px;
+        margin-bottom: 60px;
     }
 
-    
 }
-.about-container{height: 80vh;}
+@media (max-width: 430px) {
+    .about-container .heading{
+      display: none;
+    }
+    .about-container {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center;
+        max-width: 70%;
+        margin-left: 178px;
+    }
+
+    .image {
+        order: -1; /* Place the image first */
+        width: 100%; /* Ensure it takes up full width */
+        text-align: center;
+    }
+    .image img {
+        width: 70%;
+        height: auto; /* Maintain aspect ratio */
+        max-height: 250px; /* Restrict height for smaller screens */
+        margin-bottom: 20px;
+    }
+
+    .about-container .heading {
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        order: 0; /* Default order for heading */
+    }
+    .about-container .heading h1 {
+        color: #444444;
+        font-size: 28px;
+        margin-top: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about-wrapper {
+        width: 90%;
+        margin: 10px auto;
+        display: flex;
+        flex-direction: column; /* Ensure elements stack vertically */
+        align-items: center;
+        gap: 20px; /* Add spacing between elements */
+    }
+
+    .about-content {
+        width: 100%; /* Make content take full width */
+        text-align: center; /* Center-align text */
+    }
+    .about-content h2 {
+        font-family: "Ubuntu", sans-serif;
+        font-weight: 400;
+        font-size: 22px;
+        color: #487bd2;
+        margin-bottom: 10px;
+    }
+    .about-content p {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.4;
+        margin: 10px 0;
+    }
+
+    .about-content .Abtn {
+        display: inline-block;
+        margin-top: 15px;
+        text-decoration: none;
+        border: 2px solid #487bd2;
+        font-size: 16px;
+        color: #487bd2;
+        padding: 10px 14px;
+        letter-spacing: 0.5px;
+        cursor: pointer;
+    }
+    .about-content .Abtn:hover {
+        color: #fff;
+    }
+    .about-content .Abtn::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #487bd2;
+        z-index: -1;
+        transition: transform 0.7s;
+        transform-origin: 0 0;
+        transform: scaleX(0);
+    }
+    .about-content .Abtn:hover::before {
+        transform: scaleX(1);
+    }
+}
+

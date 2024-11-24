@@ -41,7 +41,7 @@ function Works() {
                     <img src={card} alt="rando" />
                     <h2>Create a Wallet Pin</h2>
                     <p>
-                        Create your unique wallet pin required for your transactions
+                        Create your wallet pin for your transactions
                     </p>
                 </div>
                 </div>

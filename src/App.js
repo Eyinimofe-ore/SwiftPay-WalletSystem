@@ -14,6 +14,7 @@ import Contact from './Components/Contact/Contact';
 import Auth from './Auth'; // Import the Auth component
 import { config } from './Services';
 
+
 function App() {
   const { dashboard, overview, wallet, history, account, support ,sendMoney,deposit,pay,walletLogin,contact} = config.routeconfig;
 

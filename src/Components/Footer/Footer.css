@@ -140,6 +140,9 @@ hr{
 @media (max-width:700px){
     footer{
         bottom: unset;
+        margin-left: 150px;
+        width: 510px;
+        margin-top: 80px;
     }
     .col{
         flex-basis: 100%;
@@ -168,4 +171,56 @@ span{
 .iconic2{
     font-size: 23px;
     color: #fff;
+}
+
+@media (max-width: 430px) {
+    footer {
+        width: 570px;
+        padding: 50px 0 20px;
+        font-size: 11px;
+        line-height: 18px;
+        margin-left: 100px;
+        margin-top: 70px;
+    
+        
+    }
+    .row{
+        padding-left: 60px;
+        align-items: center;
+    }
+    
+    .col h1, .col h3 {
+        font-size: 16px;
+    }
+    ul li {
+        font-size: 12px;
+    }
+    footer form {
+        margin-bottom: 30px;
+    }
+    footer input {
+        font-size: 12px;
+    }
+    footer button .arrow {
+        font-size: 14px;
+    }
+    .social-icons .icon {
+        width: 20px;
+        height: 20px;
+        font-size: 16px;
+    }
+    .underline {
+        height: 3px;
+    }
+    .underline span {
+        width: 10px;
+    }
+}
+@media (max-width: 768px) and (min-width:430px) {
+    footer{
+        width: 820px;
+        margin-top: 50px;
+        padding-top: 50px;
+    }
+
 }
